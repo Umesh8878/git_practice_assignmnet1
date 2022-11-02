@@ -1,11 +1,14 @@
 function prime(num){
-    let bag="";
-    for(let i=0; i<=num; i++){
-        if(i%2==0){
-            console.log("Prime");
+    let count=0;
+    for(let i=1; i<=num; i++){
+        if(num%i==0){
+            count++;
+        }
+        if(count==2){
+            console.log(num,+"is Prime number")
         }
         else{
-            console.log("Not Prime");
+            console.log(num,+"is not a Prime number");
         }
     }
 }
